@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Enroll</title>
+      <meta charset="utf-8">
+
+      <meta name="viewport" content="width=device-width, initials-scale=1.0">  
+      <link rel="stylesheet" href="css/style.css">   
+      <link rel="stylesheet" href="css/mobilestyles.css">  
+      <link rel="stylesheet" href="css/tabletstyles.css">  
+
+      <script type="text/javascript">
+         function calculate() {
+            var kittypoints = 0;
+            var kittykisses = 0;
+            var total = 0;
+
+            if (document.getElementById("theyareok").checked) {
+               kittypoints= 5;
+            }
+            else if (document.getElementById("theyarenice").checked) {
+               kittypoints= 20;
+            }
+            else if (document.getElementById("theyarewonderful").checked) {
+               kittypoints= 100;
+            }
+            else if (document.getElementById("theyareheaven").checked) {
+               kittypoints= 120;
+            }
+
+            kittykisses = 10 * document.getElementById("kittykisses").value;
+
+            total = kittypoints + kittykisses;
+
+            alert("Your total kittypoints are: uwu " + total); //this produces a concatenated string in an alert box.
+         }
+      </script>
+   </head>
+   <body>
+
+      <header>
+         <img src="media/images/logoCGP.png" alt="cat girls and plushies">
+      </header>
+
+      <nav>
+         <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="plushies.html">Plushies</a></li>
+               <li><a href="catgirls.html">Cat Girls</a></li>
+               <li><a href="enroll.html">Enroll</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="Catculator.html">Catculator</a></li>
+         </ul>
+      </nav>
+
+      <figure class="tablet">
+         <img src="media/images/animegirlnyaa.jpg" alt="just a anime girl nyaa">
+      </figure>
+
+      <main>
+
+         <div class="row">
+            <div class="column left desktop">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+               <img src="media/images/image.gif" alt="nyaa gif" height="63%" width="63%">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+               <img src="media/images/image.gif" alt="nyaa gif" height="63%" width="63%">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+
+            </div>
+
+            <div class="column center">
+
+               <p>need to add content</p> 
+            <div class="kittypoints">     
+            <table>
+               <tr>
+                  <td><label for="firstname">First Name</label></td>
+                  <td><input type="text" id="firstname" name="firstname"></td>
+               </tr>
+               <tr>
+                  <td><label for="catname">Cat Name</label></td>
+                  <td><input type="text" id="catname" name="catname"></td>
+               </tr>
+               <tr>
+                  <td><label for="email">Email</label></td>
+                  <td> <input type="email" id="email" name="email"> <!--input type has to be a email--></td>
+               </tr>
+               <!--<tr>
+                  <td><label for="phone">Phone</label></td>
+                  <td><input type="tel" id="phone" name="phone"></td>--><!--input type has to be a phone number-->
+               </tr>
+            </table>      
+ 
+               <table>
+                  <caption>Kitty Points</caption>
+                  <tr>
+                     <td>They are ok</td>
+                     <td>5</td>
+                     <td><input type="radio" id="theyareok" name="kittypoints" value="5"></td>
+                  </tr>
+                  <tr>
+                     <td>They are nice</td>
+                     <td>20</td>
+                     <td><input type="radio" id="theyarenice" name="kittypoints" value="20"></td>
+                  </tr>
+                  <tr>
+                     <td>They are wonderful</td>
+                     <td>100</td>
+                     <td><input type="radio" id="theyarewonderful" name="kittypoints" value="100"></td>
+                  </tr>
+                  <tr>
+                     <td>They are heaven</td>
+                     <td>120</td>
+                     <td><input type="radio" id="theyareheaven" name="kittypoints" value="120"></td>
+                  </tr>
+
+                  <tr>
+                     <td>Kitty Kisses</td>
+                     <td>10</td>
+                     <td><input type="number" id="kittykisses" min="0" value="0"></td>
+                  </tr>
+               </table>
+
+               <p><input type="submit" id="submit" value="submit" onclick="calculate()"></p>
+               <input type="reset" id="reset" value="reset"><br>
+            </div><br>   
+
+               <video width="320" height="240" autoplay loop>
+                  <source src="media/video/enrollcatgirl.mp4" type="video/mp4">
+               </video>
+
+            </div>
+
+            <div class="column right tablet">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+               <img src="media/images/image.gif" alt="nyaa gif" height="63%" width="63%">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+               <img src="media/images/image.gif" alt="nyaa gif" height="63%" width="63%">
+               <img src="media/images/nyaa.png" alt="nyaa png" height="63%" width="63%">
+
+            </div>
+         </div>
+
+      </main>
+
+      <footer>
+         <p>Our location:<br>
+            in your heart.</p>
+            <p>Phone Number: <a href="tel:1234uwu5432">(1234)uwu-5432</a></p>
+            <p>Email Address: <a href="mailto:wearecats@gmail.com">wearecats@gmail.com</a></p>
+      </footer>
+
+   </body>
+</html>

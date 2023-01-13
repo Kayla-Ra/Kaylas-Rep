@@ -1,0 +1,48 @@
+.catculator {
+    text-align: center;
+    border: 0.1em  solid rgb(204, 43, 182);
+    border-radius: 0.3em;
+    max-width: 530px;
+    background-color: cyan;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0.3em;
+}  
+.catculator h1{
+    color: rgb(204, 43, 182);
+}
+
+.catculator table {
+    margin-left:auto;
+    margin-right:auto;
+    width: 95%;   
+} 
+
+.catculator caption input{
+    border: 0.1em solid rgb(204, 43, 182);
+    border-radius: 0.2em;
+    font-size: 2.1em;
+    font-weight: bold;
+    text-align: right;
+    width: 95%; 
+    color: rgb(204, 43, 182);
+    background-image: linear-gradient( to right, cyan, pink, pink);
+}
+
+.catculator td {
+    border: 0.1em solid rgb(204, 43, 182);
+    border-radius: 0.5em;
+    padding: 0.2em;
+    font-size: 1.3em;
+    background-image: linear-gradient( to right bottom, cyan, pink, pink, pink);
+}
+
+.catculator input {
+    font-size: 1.5em;
+    width: 60%;
+}
+/*it is so weird if change the buttons size they stay as buttons but if change the buttons background color or border color they become not buttons any more*/
+
+
+
+

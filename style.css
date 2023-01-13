@@ -1,0 +1,229 @@
+body {
+    background-image: linear-gradient(pink, cyan);
+}
+
+header img {
+        /*This makes image a flexable image*/
+    width: 100%; /*This streches the image across the viewport.*/
+    height: auto; /*The height will change based on the size of the viewport*/
+    max-width: 1100px;
+}
+
+nav{
+    border-top: solid 0.3em cyan;
+    border-bottom: solid 0.3em cyan;
+    border-radius: 1em; /*this rounds the corners of elements*/
+
+    font-weight: bold;
+    text-align: center;
+    max-width: 47.5%;
+}    
+nav {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: pink;
+    padding: 0.3em;
+    min-width: 12%;
+    margin: .3em;
+    list-style-type: none; /*this removes bullet points*/
+    box-shadow: 0.4em 0.4em 0.4em cyan;
+}
+
+nav ul li a {
+    color: rgb(204, 43, 182);
+    text-decoration: none; /*this removes the underline from the hyperlink*/
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 500px;
+    height: auto;
+    width: 100%;
+    border-radius: 1em;
+}
+
+
+main {
+    margin-top: 1em; /*this places some space between elements*/
+    border-top: solid 0.3em cyan;
+    border-bottom: solid 0.3em cyan;
+    border-radius: 1em;
+    background-image: linear-gradient( to left, cyan, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, pink, cyan);
+}
+
+
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    width: 15%;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    background-image: linear-gradient( to left, pink, pink, pink, pink, cyan);
+    border-top-left-radius: 0.5em;
+}
+
+main div .center {
+    padding: 5px;
+    width: 66%;
+    text-align: center;
+    background-color: pink;
+}    
+
+main div .right {
+    width: 15%;
+    padding: 5px;
+    float: right;
+    text-align: center;
+    background-image: linear-gradient( to right, pink, pink, pink, pink, cyan);
+    border-top-right-radius: 0.5em;
+}
+/*this is for table on plushies page*/
+.plushies {
+    text-align: center;
+    border: 0.1em  solid black;
+    border-radius: 0.3em;
+    max-width: 1000px;
+    background-color: cyan;
+    margin-left:auto;
+    margin-right:auto;
+}  
+.plushies table {
+    /* border-collapse: collapse; This is the collapse the table borders*/
+    width: 100%;
+    
+} 
+
+.plushies caption {
+    border: 0.1em;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.plushies th {
+    font-weight: bold;
+}
+
+.plushies th, .plushies td {
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    color: rgb(204, 43, 182);
+    background-color: pink;
+}
+
+/*catgirls*/
+
+.catgirls {
+    text-align: center;
+    border: 0.1em  solid black;
+    border-radius: 0.3em;
+    background-color: cyan;
+    padding: 15px;
+    max-width: 860px;
+    margin-left:auto;
+    margin-right:auto;
+    color: rgb(204, 43, 182);
+    font-size: 1.3em;
+}
+
+.buttonboxcg {
+    border: 0.1em  solid black;
+    border-radius: 0.3em;
+    background-color: pink;
+    max-width: 740px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 15px;
+}
+
+.buttoncg {
+    font-size: 1.0em;
+    color: rgb(204, 43, 182);
+}
+
+
+/*this is for tables on enroll page*/
+.kittypoints {
+    text-align: center;
+    border: 0.1em  solid black;
+    border-radius: 0.3em;
+    background-color: cyan;
+    padding: 15px;
+    max-width: 460px;
+    margin-left:auto;
+    margin-right:auto;
+}  
+.kittypoints table {
+   border-collapse: collapse; /*This is the collapse the table borders*/
+   margin-left:auto;
+   margin-right:auto;
+} 
+
+.kittypoints caption {
+    border: 0.1em;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.kittypoints td {
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    color: rgb(204, 43, 182);
+    background-color: pink;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: solid 0.3em cyan;
+    border-bottom: solid 0.3em cyan;
+    border-radius: 1em;
+    background-image: linear-gradient(cyan, pink);
+    text-align: center;
+}
+
+
+/*begin desktop.*/
+@media screen and (min-width: 960px) {
+
+    header img {
+        width: auto;
+        height: 7em;
+        max-width: 57%;
+    }
+
+    nav {
+        margin-top: -7em; /*This moves the nav element above where it would normally be*/
+        width: 49%;
+        float: right; /*This flosts the nav element to the right side of the page*/
+    }
+
+    nav ul li {
+        display: inline-block; /*this list items horizontally and allows them to strech.*/
+        border-radius: 1em;
+    }
+
+    main div .center {
+    border-left: 3px solid cyan;
+    border-right: 3px solid cyan;
+    }
+}
+
+/*end desktop.*/

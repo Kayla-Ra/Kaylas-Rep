@@ -1,0 +1,44 @@
+/*begin tablet.*/
+@media screen and (max-width: 959.5px)and (min-width: 640px)  {
+
+    nav {
+        max-width: 99%;
+    }
+
+    nav ul li {
+        display: inline-block; /*this list items horizontally and allows them to strech.*/
+        border-radius: 1em;
+    }
+    figure img {
+        max-width: 400px;
+        height: auto;
+        width: 100%;
+        border-radius: 0.8em;
+    }
+    
+
+    .desktop {
+        display: none;
+    }
+    main div .center {
+        padding: 5px;
+        width: 81%;
+        text-align: center;
+        border-right: 3px solid cyan;
+    }
+    .plushies th, .plushies td {
+        border-radius: 0.3em;
+        padding: 0.3em;
+        font-size: 1.1em;
+    }
+    main div .center iframe{
+        max-width: 90%;
+            }
+
+    main div .center h1 video{
+        height: 180px;
+        width: 120px;
+    }
+}
+
+/*end table.*/

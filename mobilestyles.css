@@ -1,0 +1,67 @@
+/*begin mobile.*/
+@media screen and (max-width: 639px) {
+
+    nav {
+        max-width: 99%;
+    }
+
+    nav ul li {
+        border-radius: 1em;
+        margin-left: -2em;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: none;
+    }
+    main div .center {
+        padding: 5px;
+        width: 97%;
+        text-align: center;
+    }
+
+    .plushies th, .plushies td {
+        border-radius: 0.2em;
+        padding: 0.1em;
+        font-size: 0.8em;
+    }
+    main div .center iframe{
+    max-width: 90%;
+    max-height: 230px;
+    }
+    main div .center h1 video{
+        height: 120px;
+        width: 80px;
+    }
+
+    .kittypoints {
+        padding: 5px;
+    }
+    .kittypoints caption {
+        border: 0.1em;
+        font-size: 1.2em;
+    }
+    
+    .kittypoints td {
+        border-radius: 0.2em;
+        padding: 0.2em;
+        font-size: 0.9em;
+    }
+    div .catculator {
+        max-width: 240px;
+    }
+    div .catculator caption input{
+        border: 0.1em solid rgb(204, 43, 182);
+        font-size: 1em;
+    }
+    div .catculator td {
+        padding: 0.1em;
+        font-size: 0.7em;
+    }
+    div .catculator h1 {
+        font-size: 1.2em;
+    }
+}
+    /*end mobile.*/
